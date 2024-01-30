@@ -5,8 +5,7 @@ const bcrypt = require('bcryptjs');
 var fetchuser = require('../Middleware/fetchuser.js');
 const dotenv = require('dotenv')
 dotenv.config();
-// const JWT_SECRET = `${process.env.NEW_JWT_SECRET}`;  //isse webtoken ko sign karenge
-const JWT_SECRET = "Harryisagoodb$oy";  //isse webtoken ko sign karenge
+const JWT_SECRET = `${process.env.NEW_JWT_SECRET}`;  //isse webtoken ko sign karenge
 var jwt = require('jsonwebtoken');
 
 

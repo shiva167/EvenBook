@@ -3,10 +3,10 @@ const connectToMongo = require('./db');
 const express = require('express');
 const dotenv = require('dotenv');
 mongoose.set('strictQuery',true);
-dotenv.config({ path: './../.env'});
+dotenv.config({ path: '../.env'});
 connectToMongo();
   const app = express()
-  const port =process.env.APP_PORT|| 5000;
+  const port =process.env.APP_PORT|| 5100;
   var cors = require('cors')
   app.use(cors())
   // const port = 5000;
