@@ -3,7 +3,7 @@
 var jwt = require('jsonwebtoken');
 //isse webtoken ko sign karenge
 
-const JWT_SECRET = process.env.NEW_JWT_SECRET;
+const JWT_SECRET = `${process.env.NEW_JWT_SECRET}`;
   const fetchuser=(req,res,next)=>{
   //Get the user from the jwt token and add id to req object
 const token = req.header('auth-token');
